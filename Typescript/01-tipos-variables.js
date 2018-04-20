@@ -14,17 +14,48 @@ let fecha: Date = new  Date();
 let casado: boolean = false;
 //let mascotas:object = {};
 */
-var Usuario = /** @class */ (function () {
-    function Usuario(nombre, Edad, Cedula) {
-        this.mNombre = nombre;
-        this.mEdad = Edad;
-        this.mCedula = Cedula;
+/*class Usuario {
+
+    public mNombre:String;
+    private mEdad: Number;
+    protected mCedula: string;
+    constructor (nombre:string,
+                 Edad:number,
+                 Cedula: string,
+                 ){
+        this.mNombre=nombre;
+        this.mEdad=Edad;
+        this.mCedula=Cedula;
     }
-    Usuario.prototype.imprimirConsola = function () {
+    public imprimirConsola() {
         //tempalte Strings tilde invertida
-        console.log("El usuario se llama " + this.mNombre + " la cedula del usuario es :" + this.mCedula + ", la edad del usuario es: " + this.mEdad);
-    };
-    return Usuario;
+        console.log(`El usuario se llama ${this.mNombre} la cedula del usuario es :${this.mCedula}, la edad del usuario es: ${this.mEdad}`)
+
+    }
+}
+let usuario: Usuario = new Usuario('Erika',
+    25,
+    '1721473823')
+
+////////////// inteerfaz
+interface usuarioDos {
+     mNombre:String;
+     mEdad: Number;
+   mCedula: string;
+   imprimirConsola(nombre: String) : void;
+   usuario: Usuario;
+}
+let usuaarioCuatro: usuarioDos;
+usuaarioCuatro = {
+
+}
+*/
+// ////////////7
+var UsarioTres = /** @class */ (function () {
+    function UsarioTres(mNombre, mEdad, mCedula) {
+        this.mNombre = mNombre;
+        this.mEdad = mEdad;
+        this.mCedula = mCedula;
+    }
+    return UsarioTres;
 }());
-var usuario = new Usuario('Erika', 25, '1721473823');
-console.log(usuario);

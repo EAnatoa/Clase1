@@ -20,7 +20,7 @@ let fecha: Date = new  Date();
 let casado: boolean = false;
 //let mascotas:object = {};
 */
-class Usuario {
+/*class Usuario {
 
     public mNombre:String;
     private mEdad: Number;
@@ -43,4 +43,25 @@ let usuario: Usuario = new Usuario('Erika',
     25,
     '1721473823')
 
-console.log(usuario);
+////////////// inteerfaz
+interface usuarioDos {
+     mNombre:String;
+     mEdad: Number;
+   mCedula: string;
+   imprimirConsola(nombre: String) : void;
+   usuario: Usuario;
+}
+let usuaarioCuatro: usuarioDos;
+usuaarioCuatro = {
+
+}
+*/
+// ////////////7
+class UsarioTres {
+    constructor(public mNombre:String,
+                private mEdad: Number,
+                protected  mCedula: String){
+    }
+
+}
+

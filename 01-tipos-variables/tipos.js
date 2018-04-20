@@ -1,12 +1,10 @@
-var nombre = "28";
+/*var nombre = "28";
 var edad = 28   // para enteros
 var fecha = new Date();
 var casado = true;  // true
 var casa = undefined;
 var arreglo = []
 var arregloNumero = [1,2,3]
-
-
 function sumarDosNumeros(numeroUno,numeroDos){
     return numeroUno + numeroDos
 };
@@ -57,9 +55,6 @@ function sumarDosNumeros(numeroUno,numeroDos){
 
 console.log (sumarDosNumeros(1,2));
 
-
-
-
 //
 var sumarDosNumerosVersionDos =  function sumarDosNumeros(numeroUno,numeroDos){
     return numeroUno + numeroDos
@@ -70,9 +65,6 @@ console.log(usuario.cedula);
 console.log(usuario.nombre);
 console.log(usuario.apellido);
 console.log(usuario.imprimirEnConsola(1,2));
-
-
-
 
 // para escribir un jason para objetos
 var usuario = {
@@ -89,25 +81,21 @@ console.log(usuario.apellido);
 console.log(usuario.imprimirEnConsola(1,2));
 
 //solo imprimos el
-
-
-
     //funcion
     function sumarDosNumeros(numeroUno,numeroDos){
         return numeroUno + numeroDos
 };
 
 console.log (sumarDosNumeros(1,2));
-
-
-
-
 //
     var sumarDosNumerosVersionDos =  function sumarDosNumeros(numeroUno,numeroDos){
         return numeroUno + numeroDos
     };
 
 console.log (sumarDosNumeros(1,2));
+*/
+
+
 
 
 

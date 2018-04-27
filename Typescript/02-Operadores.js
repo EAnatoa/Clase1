@@ -58,7 +58,8 @@ function calcularDeudaDeUsuario(edad) {
         return totalAcumulado + (((edad) / 100) * deuda);
     }, 0);
 }
-var usuarioConcincoAniosMenos = arregloUsuarios.map(function (usuario) {
+var usuarioConcincoAniosMenos = arregloUsuarios.map(// mapy filter devuelve un arreglo reduce:un numero
+function (usuario) {
     usuario.edad = usuario.edad - 5;
     usuario.deuda = calcularDeudaDeUsuario(usuario.edad);
     return usuario;
@@ -66,6 +67,13 @@ var usuarioConcincoAniosMenos = arregloUsuarios.map(function (usuario) {
     .filter(function (usuario) {
     // true se devuelve, false no se devuelve
     return (usuario.deuda < 100);
+})
+    /*.every((usuario: UsuarioArreglo)=>{   // para ver si cumple o no
+        return (usuario.edad>=5);
+    }  )*/
+    .some(function (usuario) {
+    return (usuario.edad >= 110);
 });
 console.log('usuariosConCincoAniosMenos', usuarioConcincoAniosMenos);
 ;
+////////////////7
